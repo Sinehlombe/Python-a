@@ -140,10 +140,57 @@ Comments in Python:
     -You can use multiline string (enclosed in triple quotes) to create multiline comments in Python. 
     -Since Python ignores string literals that are not assigned to a variable or used in an expression.
 
-     
-    
-  
 
+Python - Modify Strings
+    -Remove Whitespace
+        - USE strip() METHOD
+            -a = " Hello, World! "
+                print(a.strip()) # returns "Hello, World!"
+
+    - Replace String
+        -Replacing characters in a string.
+            - USE replace() METHOD
+                -a = "Hello, World!"
+                    print(a.replace("H", "J"))
+                    =Jello, World!
+                    
+     - Split String
+         -Splits the string into substrings if it finds instances of the separator:
+         -USE split() METHOD
+             -a = "Hello, World!"
+                print(a.split(",")) # returns ['Hello', ' World!']
+                 
+                     
+    -String Concatenation
+        -String Concatenation
+            - combine, two strings you can use the + operator.
+            - a = "Hello"
+                b = "World"
+                c = a + b
+                print(c)
+                
+                =HelloWorld
+
+        -To add a space between them, add a " ":
+
+                    a = "Hello"
+                    b = "World"
+                    c = a + " " + b
+                    print(c)
+​
+                    = Hello World
+       
+        STRING FORMAT:
+         -
+PYTHON METHODS
+    -In programming you often need to know if an expression is True or False.
+    -You can evaluate any expression in Python, and get one of two answers, True or False.
+
+
+
+    Python Operators
+    
+        
 
 
 
