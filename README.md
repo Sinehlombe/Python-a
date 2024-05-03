@@ -189,15 +189,94 @@ PYTHON METHODS
 
 
     Python Operators
+    SAME AS WHAT YOU KNOW!!!
     
+
+Python If ... Else
         
+ADD ON TO WHAT YOU KNOW ABOUT IF STATEMENTS: 
+    - Elif
+        -The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
+              a = 33
+              b = 33
+              if b > a:
+                  print("b is greater than a")
+              elif a == b:
+                  print("a and b are equal")
 
+                  = a and b are equal
 
+                  
+  The pass Statement
+     -if statements cannot be empty.
+     if EMPTY = put in the pass statement to avoid getting an error.
 
+         a = 33
+        b = 200
+        if b > a:
+          pass
 
+Python While Loops
+     -Python Loops
+        Python has two primitive loop commands
+            -while loops
+                    -With the while loop we can execute a set of statements as long as a condition is true.
+                            -Print i as long as i is less than 6:
+                                    i = 1
+                                    while i < 6:
+                                      print(i)
+                                      i += 1
 
+                                    OUTPUT
+                                    1
+                                    2
+                                    3
+                                    4
+                                    5
 
+    -The break Statement
+            - With the break statement we can stop the loop even if the while condition is true. 
 
+            Example
+                Exit the loop when i is 3:
+                
+                i = 1
+                while i < 6:
+                  print(i)
+                  if i == 3:
+                    break
+                  i += 1
+ANSWERS
+                1
+                2
+                3
+
+    -The continue Statement
+        -With the continue statement we can stop the current iteration, and continue with the next:
+
+                    -Example
+                       - Continue to the next iteration if i is 3:
+                    
+                        i = 0
+                        while i < 6:
+                          i += 1
+                          if i == 3:
+                            continue
+                          print(i
+
+                    -OUTPUT
+                    1
+                    2
+                    4
+                    5
+                    6
+
+        -The code uses a while loop to count from 1 to 6. However, when the count reaches 3, it skips printing that number and continues to the next one. This is            -because of the continue statement, which tells the loop to skip the rest of the code inside the loop for that iteration and move to the next iteration.
+               
+                
+        -for loops
+        -
+            
 
 
 
