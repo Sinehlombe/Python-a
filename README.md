@@ -276,7 +276,134 @@ ANSWERS
                 
         -for loops
         -
+
+
+
+        FUNCTIONS
+    Definition of Functions:
+
+        -Functions in Python are defined using the def keyword followed by the function name and parentheses ( ) containing the parameters.
+        -Example: def performOperation(num1, num2, operation):
+ 2. Parameters:
+
+        -Parameters are variables that hold the arguments (values) passed to the function.
+        -In your example, num1, num2, and operation are parameters.
+ 3. Return Statement:
+
+        -The return statement is used to return a value from the function.
+        -Example: return num1 + num2 or return num1 * num2
+ 4. Default Values:
+
+        -Parameters in Python functions can have default values assigned to them.
+        -Example: def performOperation(num1, num2, operation="sum"):
+        -If the operation argument is not provided, it defaults to "sum".
+ 5. Named Parameters:
+
+        -Functions can accept named parameters, where each parameter is explicitly named along with its value.
+        -This can make the function call more readable and less error-prone.
+        -Example: performOperation(num1=2, num2=3, operation="sum")
+6. Variable Arguments (*args):
+
+        -Python functions can accept a variable number of positional arguments using the *args syntax.
+        -This allows the function to accept any number of arguments and treat them as a tuple inside the function.
+        -Example: def performOperation(*args, operation="sum"):
+7. Keyword Arguments (**kwargs):
+
+        -Functions can accept keyword arguments using the **kwargs syntax.
+        -This allows the function to accept any number of keyword arguments and treat them as a dictionary inside the function.
+        -Example: def performOperation(**kwargs):
+8. Usage of math Library:
+
+        -The math library provides mathematical functions and constants in Python.
+        -Example: import math and then use math.sum or math.prod in the performOperation function.
+9. Flexible Functionality:
+
+        -By combining default values, variable arguments, and keyword arguments, functions can be made more flexible and powerful.
+        -This allows the same function to perform different operations based on the arguments provided.
+10. Example Usage:
+
+        -performOperation(1, 2, 3) would return 6.
+        -performOperation(6, 7, 8) would return 27.
             
+
+VARIABLES
+    -1. Local Variables:
+
+Local variables are defined inside a function and can only be accessed within that function.
+They are created when the function is called and are destroyed when the function exits.
+Example:
+python
+Copy code
+def my_function():
+    x = 10
+    print(x)  # Output: 10
+my_function()
+2. Global Variables:
+
+Global variables are defined outside any function and can be accessed anywhere in the code.
+They are created when the program starts and are destroyed when the program ends.
+Example:
+python
+Copy code
+x = 10
+def my_function():
+    print(x)  # Output: 10
+my_function()
+3. The locals() Function:
+
+The locals() function returns a dictionary containing all local variables in the current scope.
+It can be used to access and manipulate local variables within a function.
+Example:
+python
+Copy code
+def my_function():
+    x = 10
+    y = 20
+    print(locals())  # Output: {'x': 10, 'y': 20}
+my_function()
+4. The globals() Function:
+
+The globals() function returns a dictionary containing all global variables.
+It can be used to access and manipulate global variables from within a function.
+Example:
+python
+Copy code
+x = 10
+y = 20
+def my_function():
+    print(globals()['x'])  # Output: 10
+my_function()
+5. Global and Local Scope:
+
+Variables in Python have either global or local scope.
+Local variables are accessible only within the function where they are defined.
+Global variables are accessible throughout the entire program.
+Example:
+python
+Copy code
+x = 10  # Global variable
+def my_function():
+    y = 20  # Local variable
+    print(x)  # Accessible
+    print(y)  # Accessible
+my_function()
+6. Nested Functions:
+
+You can define a function within another function, known as a nested function.
+The inner function is only accessible within the outer function.
+Example:
+python
+Copy code
+def outer_function():
+    def inner_function():
+        print("Inner function")
+    inner_function()  # Output: Inner function
+outer_function()
+Understanding variable scope in Python is crucial for writing efficient and maintainable code. By knowing where variables are accessible, you can avoid naming conflicts and write more organized code.
+
+
+
+
 
 
 
